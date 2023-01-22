@@ -20,5 +20,21 @@
 # print(person1, person2, sep="\n\n\n")
 
 # 4
-two_multiple = int(1000/2) - 1
-print(two_multiple)
+multiple = []
+i = 1
+while 2 * i < 1000:
+  multiple.append(2 * i)
+  i += 1
+
+j = 1
+while j * 7 < 1000:
+  multiple.append(7 * j)
+  j += 1
+
+# 중복제거 및 총합
+multiple = list(set(multiple))
+multiple = sum(multiple)
+
+print(multiple)
+
+
