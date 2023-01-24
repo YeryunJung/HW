@@ -19,8 +19,7 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    if b == 0:
-        print('0으로는 나눌 수 없습니다.')
-        return
-    else: 
+    try: 
         return a / b
+    except:
+        return('0으로는 나눌 수 없습니다.')
